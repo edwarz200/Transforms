@@ -96,10 +96,10 @@ div{
     background: #005F76;
     height: 430px;
 }
-.cpindex footer ,.cpuno footer {
+.cpindex footer, .cpuno footer, .cpdos footer,.cptres footer,.cpcuatro footer,.cpcinco footer{
     overflow: hidden;
 }
-.cpindex footer:hover img{
+.cpindex footer:hover img,.cptres footer:hover img{
     transform: scale(1.3);
 }
 .cpindex footer article{
@@ -107,8 +107,9 @@ div{
     transition-property: transform;
     transition-duration: .35s;
     transition-delay:  0s;
+    background-color: rgba(100,0,255, .5); 
 }
-.cpindex footer article, .cpuno footer article, .cpdos footer article{
+div footer article{
     position: absolute;
     top: 0;
     left: 0;
@@ -119,7 +120,6 @@ div{
 }
  .cpindex footer:hover article{ 
     transform: scale(1);
-    background-color: rgba(100,0,255, .5); 
 }
 .cpindex footer article h1{
     transform: translateY(-100px);
@@ -158,16 +158,19 @@ div footer article p{
     top: 180px;
     right: 150px;
 }
-.cpindex footer article a, .cpdos footer article a{
-    position: absolute;
+.cpindex footer article a, .cpdos footer article a,.cptres footer article a,.cpcuatro footer article a,.cpseis footer article a{
     color: rgba(255,255,255, 0);
-    text-decoration: none;
 }
-.cpindex footer:hover article a,.cpuno footer article a{
+div footer article a{
     padding: 10px 20px;
+    text-decoration: none;
+    position: absolute;
+}
+.cpindex footer:hover article a,.cpuno footer article a,.cptres footer:hover article a,.cpcuatro footer:hover article a,
+.cpcinco footer:hover article a, .cpseis footer:hover a,.cpsiete footer:hover article a{
     background-color: chocolate;
     color: rgba(255,255,255, 1);
-}a
+}
 /* PAGINA 1 */
 .cpuno footer article{
     transform: scale(1) rotate(90deg) translate(250px,-400px);
@@ -177,7 +180,7 @@ div footer article p{
     transition-delay: .1s;
 }
 .cpuno footer:hover article{
-    transform:rotate(0) translate(0);
+    transform: rotate(0) translate(0);
 }
 .cpuno footer:hover article h1{
     transform: translateY(4px);
@@ -211,9 +214,6 @@ div footer article p{
     transform: translate(-50px,30px);
 }
 /* Pagina 3 */
-.cpdos footer{
-    overflow: hidden;
-}
 .cpdos footer:hover img{
     transform:  rotate(-10deg) scale(1.26);
 }
@@ -262,3 +262,634 @@ div footer article p{
     color: rgba(255,255,255, 1);
 }
 /* Pagina 4 */
+.cptres footer:hover img{
+   transform: scale(1.2);
+}
+.cptres footer article{
+    transform: rotate(720deg) scale(0);
+    transition: .35s;
+}
+.cptres footer:hover article{
+    transform: rotate(0) scale(1);
+    background-color: rgba(0, 95 ,118, .5);
+}
+.cptres footer article h1{
+    transform: translate(250px,30px);
+    transition-property: transform, color;
+    transition-duration: .6s;
+    transition-delay: .35s; 
+}
+.cptres footer:hover article h1{
+    transform: translate(0,30px);
+    color: white;
+}
+.cptres footer article p{
+    transform: translate(-400px,50px);
+    transition-property: transform,color;
+    transition-duration: .6s;
+    transition-delay: .35s;
+}
+.cptres footer:hover article p{
+    transform: translate(0px,50px);
+    color: white;
+}
+.cptres footer article a{
+    transform: translate(-50px,200px);
+    transition-property: transform,color,background-color;
+    transition-duration: .6s;
+    transition-delay: .35s,.35s,.35s;
+}
+.cptres footer:hover article a{
+    transform: translate(-50px,100px);
+}
+/* pagina 5 */
+
+.cpcuatro footer article{
+    transform: translate(-400px,250px) scale(1);
+    background-color: rgba(205,0,250, .5);
+    transition: .35s;
+}
+.cpcuatro footer:hover article{
+    transform: translate(0) scale(1);
+}
+.cpcuatro footer article h1{
+    transform: scale(0) translateY(20px) rotate(720deg);
+    transition-property: transform, color;
+    transition-duration: .6s;
+    transition-delay: .35s; 
+}
+.cpcuatro footer:hover article h1{
+    transform: scale(1) translateY(25px) rotate(0deg);
+    color: white;
+}
+.cpcuatro footer article p{
+    transform: translate(-400px,130px);
+    transition-property: transform,color;
+    color: white;
+    transition-duration: .6s;
+    transition-delay: .9s;
+}
+.cpcuatro footer:hover article p{
+    transform: translate(0px,50px);
+}
+.cpcuatro footer article a,.cpcinco footer article a,.cpsiete footer article a{
+    position: absolute;
+    top: 200px;
+    right: 150px;
+    transform: scale(0) rotate(720deg);
+}
+.cpcuatro footer article a{
+    transition-property: transform, color,background-color;
+    transition-duration: .7s;
+    transition-delay: 1s,1s,1s;
+}
+.cpcuatro footer:hover article a,.cpcinco footer:hover article a,.cpsiete footer:hover article a{
+    transform: scale(1) rotate(0deg);
+}
+/* Pagina 6 */
+.cpcinco footer img{
+    transform: scale(1);
+    transition: .4s;
+}
+.cpcinco footer:hover img{
+    transform: scale(2);
+    opacity: 0;
+}
+.cpcinco footer article a,.cpsiete footer article a{
+    transition-property: transform, color,background-color;
+    transition-duration: .7s;
+    transition-delay: .6s,.6s,.6s;
+}
+.cpcinco footer article{
+    transform: scale(0);
+    transition-property: background-color, transform;
+    transition-duration: .35s;
+    transition-delay: 0s,0s;
+    background-color: rgba(0,0,0, 0);
+}
+.cpcinco footer:hover article{
+    background-color: #000000;
+    transform: scale(1);
+}
+.cpcinco footer article h1{
+    transform: scale(0) translateY(30px);    
+}
+.cpcinco footer:hover article h1{
+    transform: scale(1) translateY(30px);
+}
+.cpcinco footer article h1,.cpcinco footer article p{
+    transition-property: transform,color;
+    transition-duration: .6s;
+    transition-delay: .6s,.6s;
+}
+.cpcinco footer:hover article h1,.cpcinco footer:hover article p{
+    color: white;
+}
+.cpcinco footer article p{
+    transform: scale(0) translateY(35px);    
+}
+.cpcinco footer:hover article p{
+    transform: scale(1) translateY(35px);    
+}
+/* Pagina 7 */
+.cpseis footer .ima{
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: .6s;
+    transition-delay: 0s;
+}
+.cpseis footer:hover .ima{
+    transform: rotate(360deg);
+}
+.cpseis footer .imgif, .cpsiete footer img:nth-child(2){
+    position: relative;
+}
+.cpseis footer .imgif, .cpsiete footer img:nth-child(2){
+    opacity: 0;
+}
+.cpseis footer .imgif, .cpsiete footer img:nth-child(2){
+    transform: scale(1) rotate(90deg) translate(-360px,-324px);
+    transition-property: transform,opacity;
+    transition-duration: .35s;
+    transition-delay: 1.6s,1.5s;
+}
+.cpseis footer:hover .imgif, .cpsiete footer:hover img:nth-child(2){
+    transform: scale(1) rotate(0deg) translate(0px,-254px);
+    opacity: 1;
+}
+.cpseis footer {
+    overflow: hidden;
+}
+.cpseis footer article{
+    transform: scale(1) rotate(90deg) translate(-125px,325px);
+    transition-property: transform, background-color;
+    transition-duration: .35s;
+    transition-delay: .35s,.5s;
+}
+.cpseis footer:hover article{
+    transform: scale(1) rotate(0deg) translate(0);
+    background-color: rgba(42,0,255, .5);
+}
+.cpseis footer article h1{
+    transform: translate(-130px,-200px);
+    transition-property: transform,color;
+     transition-duration: .6s;
+    transition-delay: .6s,.6s;
+}
+.cpseis footer:hover article h1{
+    transform: translate(0px,30px);
+    color: white;
+}
+.cpseis footer:hover article p{
+    transform: translate(0px,50px);
+    color: white;
+}
+.cpseis footer article p{
+    transform: translate(400px,50px);
+     transition-property: transform,color;
+    transition-duration: .6s;
+    transition-delay: .6s,.6s;
+}
+.cpseis footer:hover article a{
+    transform: scale(1) translateY(0px);
+    color: white;
+}
+.cpseis footer article a{
+    position: absolute;
+    top: 170px;
+    right: 150px;
+    transform: scale(0) translate(200px,200px);
+    transition-property: transform,background-color, color;
+    transition-duration: .6s;
+    transition-delay: .6s,.6s,.6s;
+ } 
+/* Pagina 7 */    
+.cpnaruto{
+    height: 589px;
+    background-color: black;
+}
+.cpsiete{
+    height: 389px;
+}
+.cpsiete footer:hover img{
+transform: scale(1.3);
+}
+.cpsiete footer{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+}
+.cpsiete footer article{
+    top: 250px;
+    margin: 0;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(194,194,194, .5);
+    transform:  translateY(0px);
+    transition-property: width,height,background-color,transform;
+    transition-duration: .5s;
+    transition-delay: 0s,0s,.1s,.0s;
+}
+.cpsiete footer:hover article{
+    transform: translateY(-250px);
+    width: 400px;
+    height: 250px;
+}
+.cpsiete footer img:nth-child(3){
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transform: scale(1) rotate(90deg) translate(75px,324px);
+    transition-property: transform,opacity;
+    transition-duration: .35s;
+    transition-delay: 3.6s,3.5s;
+}
+.cpsiete footer:hover img:nth-child(3){
+    transform: scale(1) rotate(0deg) translate(0px,0);
+    opacity: 1;
+    z-index: 100px;
+}
+.cpsiete footer article h1{
+    transform: translate(0px,0px);
+    color: rgba(255,255,255, 0);
+    font-size: 25px;
+    transition-property: transform,color;
+    transition-duration: .6s;
+    transition-delay: .6s,.6s;
+    font-size: 21,5px;
+    font-weight: bold ;
+}
+.cpsiete footer:hover article h1{
+    transform: translate(0px,10px);
+    color: rgba(60,0,0, 1);
+}
+.cpsiete footer article p{
+    transform: scale(.5) translate(-200px,-200px);
+    transition-property: transform,color;
+    transition-duration: 1s;
+    transition-delay: 1s,1s;
+    font-size: 10.5px;
+    font-weight: bold ;
+}
+.cpsiete footer:hover article p{
+    transform: scale(1) translate(0px,30px);
+    color: rgba(60,0,0, 1);
+}
+/* sharingan */
+.pespecial{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 50px;
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 31px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #007793;
+}
+.sharingan{
+    position: relative;
+    top: 20px;
+    left: 300px;
+    right: 0;
+    margin: 0 auto;
+    border: solid 3px black;
+    overflow: hidden;
+    background-color: white;
+}
+.cpnaruto .sharingan,.cpnaruto .ojo2{
+    display: inline-block;
+}
+.sharingan {
+    width: 300px;
+    height: 150px;
+    border-radius: 0 100% 0 0;
+    border-bottom-left-radius: 20%;
+    transform: skewX(10deg);
+}
+.sharingan section{
+    position: relative;
+    top: 10px;
+    left: 65px;
+    width: 140px;
+    height: 140px;
+    padding: 5px 0;
+    border: 1px solid;
+    transform: skewX(-10deg);
+    box-shadow:0px 0px 24px rgba(0,0,0,0.6);
+    border-radius:  117px 117px 117px 117px;
+    background: #000;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+.ojo2{
+    position: relative;
+    top: 20px;
+    left: 500px;
+    right: 0px;
+    margin: 0 auto;
+    border: solid 3px black;
+    overflow: hidden;
+    background-color: white;
+}
+.ojo2 {
+    width: 300px;
+    height: 150px;
+    border-radius: 100% 0  0  0;
+    border-bottom-right-radius: 20%;
+    transform: skewX(-10deg);
+}
+.ojo2 section{
+    position: relative;
+    top: 8px;
+    left: 100px;
+    width: 140px;
+    height: 140px;
+    padding: 5px 0;
+    border: 1px solid;
+    transform: skewX(10deg);
+    box-shadow:0px 0px 24px rgba(0,0,0,0.6);
+    border-radius:  117px 117px 117px 117px;
+    background: #000;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+.sharingan section article, .ojo2 section article{
+    position: relative;
+    margin: 0 0 0 5px;
+    top: 5px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transition: ease-in-out;
+    transition-property: background-color;
+    transition-duration: .5s; 
+    transition-delay: 1s;
+    box-shadow:3px 0px 58px rgba(5,5,5, .5) inset,0px 0px 20px rgba(5,5,5, .1) inset,0px 0px 9px 7px rgba(0,0,0,1);
+    background-color: rgba(10,10,10, 1);
+}
+.cpnaruto:hover .sharingan section article,.cpnaruto:hover .ojo2 section article{
+    background-color: #B20000;
+}
+.sharingan nav, .ojo2 nav{
+    position: relative;
+    background: transparent;
+ }
+
+.cpnaruto .sharingan nav:nth-child(1), .cpnaruto .ojo2 nav:nth-child(1){
+    background:#000;
+    margin: 0 auto;
+    top: 45px;
+    right: 3px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    transform: scale(0.5);
+    transition:cubic-bezier(0, 1, 1, 2);
+    transition-property:transform , background,box-shadow;
+    transition-duration: .6s;
+    transition-delay: 1s, 1s,1s;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+.cpnaruto:hover .sharingan nav:nth-child(1), .cpnaruto:hover .ojo2 nav:nth-child(1){
+    transform:scale(1);
+    transition:cubic-bezier(0, 1, 1, 2);
+    transition-property: transform;
+    transition-duration: .5s;
+    transition-delay: 1s;
+}
+.cpnaruto .sharingan .ring, .cpnaruto .ojo2 .ring{
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: scale(1) translate(5px,-20px);
+    transition: ease-in;
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-delay: 1s;
+    box-shadow: 0 0 74px rgba(51, 51, 51, 0.2), 0 0 17px rgba(51, 51, 51, 0.2) inset,0 0 5px rgba(0,0,0,0.3) inset;
+}
+.cpnaruto:hover .sharingan .ring, .cpnaruto:hover .ojo2 .ring{
+    transform: scale(1.1) translate(2.5px,-15px);
+    transition: ease-in;
+    transition-property: transform;
+    transition-duration: .1s;
+    transition-delay: 1s;
+}
+.aspa{
+    top: -107px;
+    left: 55px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    transition: background .5s ease-out;
+    transition-delay: 1s;
+}
+.aspa dl{
+    position: relative;
+    left: 3px;
+    top: -6px;
+    width: 10px;
+    height: 9px;
+    transform: skew(-28deg, -19deg);
+    border-top-left-radius: 100%;
+    transition: background .5s ease-out;
+    transition-delay: 1s;
+}
+.cpnaruto:hover .aspa, .cpnaruto:hover .aspa dl {
+    background-color:#000;
+ }
+ .der {
+    left: 93px;
+    top: -62px;
+    transform: rotate(69deg);
+}
+
+.izq {
+    left: 16px;
+    top: -80px;
+    transform: rotate(200deg);
+}
+/* aplicando animaciones */
+.cpnaruto:hover .sup {
+    animation-name: aspa1;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-delay:1.5s;
+    animation-direction: normal;
+ }
+
+ .cpnaruto:hover .der {
+    animation-name: aspa2;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-delay:1.5s;
+    animation-direction: normal;
+ }
+ 
+
+ .cpnaruto:hover .izq {
+    animation-name: aspa3;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-delay:1.5s;
+    animation-direction: normal;
+ }
+/* animaciones */
+@keyframes aspa1 {
+    0% {
+      transform: translate(0px,0px) rotate(0deg);
+    }
+    
+    50% {
+      transform:translate(40px,20px) rotate(28deg);
+    }
+
+    55% {
+        transform:translate(50px,40px) rotate(48deg);
+    }
+
+    60% {
+      transform:translate(40px,60px) rotate(68deg);
+    }
+
+    65% {
+        transform:translate(20px,70px) rotate(102deg);
+    }
+
+    70% {
+      transform:translate(0px,80px) rotate(146deg);
+    }
+
+    75% {
+        transform:translate(-20px,70px) rotate(171,5deg);
+    }
+
+    80% {
+      transform:translate(-40px,60px) rotate(197deg);
+    }
+
+    85% {
+        transform:translate(-40px,40px) rotate(226deg);
+      }
+
+    90% {
+      transform:translate(-40px,20px) rotate(255deg);
+    }
+
+    95% {
+        transform:translate(-20px,0px) rotate(302deg);
+    }
+
+    100% {
+      transform: translate(-0px,0px) rotate(349deg);
+    }
+  } 
+
+  @keyframes aspa2 {
+    0% {
+      transform: translate(0px,0px) rotate(75deg);
+    }
+
+    50% {
+      transform:translate(-40px,20px) rotate(92deg);
+    }
+    
+    55% {
+        transform:translate(-60px,10px) rotate(148,5deg);
+    }
+
+    60% {
+      transform:translate(-80px,0px) rotate(205deg);
+    }
+
+    65% {
+        transform:translate(-80px,20px) rotate(226,5deg);
+    }
+    
+    70% {
+      transform:translate(-80px,-40px) rotate(248deg);
+    }
+
+    75% {
+        transform:translate(-60px,-50px) rotate(301deg);
+    }
+
+    80% {
+      transform:translate(-40px,-60px) rotate(354deg);
+    }
+
+    85% {
+        transform:translate(-20px,-50px) rotate(370,5deg);
+    }
+
+    90% {
+      transform:translate(0px,-40px) rotate(387deg);
+    }
+
+    95% {
+        transform:translate(0px,-20px) rotate(414deg);
+    }
+
+    100% {
+      transform: translate(0px,0px) rotate(441deg);
+    }
+  } 
+
+  @keyframes aspa3 {
+    0% {
+      transform: translate(0px,0)px rotate(200deg);
+    }
+
+    50% {
+      transform:translate(0px,-40px) rotate(219deg);
+    }
+
+    55% {
+        transform:translate(20px,-50px) rotate(284,5deg);
+    }
+
+    60% {
+      transform:translate(40px,-60px) rotate(350deg);
+    }
+
+    65% {
+        transform:translate(60px,-50px) rotate(380deg);
+      }
+
+    70% {
+      transform:translate(80px,-40px) rotate(410deg);
+    }
+
+    75% {
+        transform:translate(80px,-20px) rotate(426deg);
+      }
+
+    80% {
+      transform:translate(80px,0px) rotate(442deg);
+    }
+
+    85% {
+        transform:translate(60px,-15px) rotate(472,5deg);
+      }
+
+    90% {
+      transform:translate(40px,30px) rotate(503deg);
+    }
+
+    95% {
+        transform:translate(20px,-15px) rotate(527deg);
+      }
+
+    100% {
+      transform: translate(0px,0px) rotate(551deg);
+
+    }
+  } 
