@@ -96,7 +96,7 @@ div{
     background: #005F76;
     height: 430px;
 }
-.cpindex footer, .cpuno footer, .cpdos footer,.cptres footer,.cpcuatro footer,.cpcinco footer{
+ .cpindex footer, .cpuno footer, .cpdos footer,.cptres footer,.cpcuatro footer,.cpcinco footer{
     overflow: hidden;
 }
 .cpindex footer:hover img,.cptres footer:hover img{
@@ -118,7 +118,7 @@ div footer article{
     margin: auto;
     text-align: center;
 }
- .cpindex footer:hover article{ 
+ .cpindex footer:hover article{
     transform: scale(1);
 }
 .cpindex footer article h1{
